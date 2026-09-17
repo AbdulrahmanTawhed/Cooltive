@@ -1,14 +1,15 @@
 # Cooltive
 
-**AI-powered Urban Climate & Site Intelligence Platform**
+**AI-powered Urban Climate & Site Intelligence Platform**  
 *Grow Cooler Cities, One Decision at a Time.*
-
 
 ## What is Cooltive?
 
 Cooltive helps real estate developers, consulting firms, and engineers analyze a site **before and during design**, and make design decisions based on data instead of experience or manual estimation alone.
 
-The platform ingests site data — temperature, green area coverage, building density, sun exposure, shading, wind, and more — from IoT sensors, satellite imagery, and weather APIs, then uses AI to identify areas and factors negatively affecting **Outdoor Comfort** (starting with Urban Heat Island risk).
+The platform ingests site data — land surface temperature, green area coverage, building density, sun exposure, shading, wind, and more — entirely from **open satellite imagery and open climate datasets**, then uses AI to identify areas and factors negatively affecting **Outdoor Comfort** (starting with Urban Heat Island risk).
+
+Because Cooltive relies on openly available data rather than on-site hardware, any site can be analyzed remotely, at no acquisition cost, anywhere satellite and climate coverage exists.
 
 ## What it delivers
 
@@ -18,11 +19,12 @@ The platform ingests site data — temperature, green area coverage, building de
 
 ## MVP Scope
 
-The MVP focuses on **Urban Heat** as the first strong use case: IoT + satellite + weather data → AI-based risk classification → prescriptive, cost-aware recommendations.
+The MVP focuses on **Urban Heat** as the first strong use case: open satellite + climate data → AI-based risk classification → prescriptive, cost-aware recommendations.
 
 ## Roadmap
 
 The architecture is designed to extend without a rebuild:
+
 - **Year-round intelligence**: winter use cases (rainfall, humidity, air quality, water accumulation prediction) on the same data pipeline
 - **Design-phase support**: pre-design site insights for engineers, reducing manual site analysis time
 - **3D Architecture Simulation**: a digital twin of the project enabling virtual walkthroughs — usable both as a real estate marketing tool and, more importantly, connected to the same Analysis Engine to simulate the impact of design changes
@@ -30,9 +32,10 @@ The architecture is designed to extend without a rebuild:
 
 ## Tech Direction
 
-- Backend: .NET
-- AI/ML: Python (satellite & sensor data processing, prediction models)
-- Data sources: IoT sensors, satellite imagery (Landsat, Sentinel-3/SLSTR, ECOSTRESS), weather APIs (ERA5)
+- **Backend**: .NET
+- **AI/ML**: Python (geospatial & climate data processing, prediction models)
+- **Data sources**: open satellite imagery and open climate datasets (e.g. Landsat, Sentinel, ECOSTRESS, ERA5) — specific datasets still being finalized
 
 ---
+
 *This README will be expanded with setup instructions, architecture diagrams, and API documentation as the codebase develops.*
